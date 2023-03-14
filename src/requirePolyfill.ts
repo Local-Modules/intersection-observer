@@ -16,12 +16,11 @@ const requirePolyfill = (callback?: () => void) => {
     }
   }
 
-  const isIntersectionObserverExist = false
-  // const isIntersectionObserverExist = (
-  //   'IntersectionObserver' in window
-  //   && 'IntersectionObserverEntry' in window
-  //   && 'intersectionRatio' in window.IntersectionObserverEntry.prototype
-  // )
+  const isIntersectionObserverExist = (
+    'IntersectionObserver' in window
+    && 'IntersectionObserverEntry' in window
+    && 'intersectionRatio' in window.IntersectionObserverEntry.prototype
+  )
 
   if (isIntersectionObserverExist) {
     // Minimal polyfill for Edge 15's lack of `isIntersecting` - https://github.com/w3c/IntersectionObserver/issues/211
