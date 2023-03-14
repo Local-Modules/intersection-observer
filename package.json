@@ -1,6 +1,6 @@
 {
   "name": "@locmod/intersection-observer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "IntersectionObserver react hooks",
   "module": "dist/index.es.js",
   "main": "lib/index.js",
